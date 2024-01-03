@@ -67,7 +67,7 @@ public class LoanCalc {
 				high = x; 
 			}
 			x = (low + high) / 2;
-			iterationCounter++;
+			iterationCounter++;  // counts the amount of interations it took to calculate x 
 		}
 		return x;
     }
@@ -79,7 +79,7 @@ public class LoanCalc {
 	private static double endBalance(double loan, double rate, int n, double payment) {
 		double balance = loan;
 		for (int i = 1; i <= n ; i++) {
-			balance = (balance - payment) * (1 + rate);	
+			balance = (balance - payment) * (1 + (rate / 100));	
 		}
     	return balance;
 	}
