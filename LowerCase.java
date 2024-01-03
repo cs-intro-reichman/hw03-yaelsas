@@ -1,5 +1,5 @@
 /** String processing exercise 1. */
-public class LowerCase {
+public class lowercase {
     public static void main(String[] args) {  
         String str = args[0];
         System.out.println(lowerCase(str));
@@ -11,7 +11,15 @@ public class LowerCase {
     * Non-letter characters are left as is.
     */
     public static String lowerCase(String s) {
-        // Replace the following statement with your code
-        return null;
+        String answer = "";
+        for (int i = 0; i < s.length(); i++ ) {
+            if (s.charAt(i) >= 'A' && s.charAt(i) <= 'Z') {
+                char lowerCase = (char)(s.charAt(i) + ('a' -'A')); 
+                answer += lowerCase;
+            } else {
+                answer += s.charAt(i);
+            }
+        }
+        return answer;
     }
 }
