@@ -11,7 +11,21 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+        String answer = "" + s.charAt(0) ;
+        boolean exist=false;
+        for (int i = 1; i < s.length(); i++){
+            for (int j = 0; j < answer.length(); j++){
+                // checks if char at i is already in the new string
+                if (s.charAt(i) == answer.charAt(j)) { 
+                    exist = true;
+                }
+            }
+            // adds new chars to the ew string and adds space char
+            if (!exist || s.charAt(i) == ' ') {
+                answer += s.charAt(i);
+            }
+            exist = false;
+        }
+        return answer;
     }
 }
