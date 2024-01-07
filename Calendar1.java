@@ -20,7 +20,7 @@ public class Calendar1 {
 	    int debugDaysCounter = 0; 
 	    //// Write the necessary initialization code, and replace the condition
 	    //// of the while loop with the necessary condition 
-	 	while (true) {
+	 	/*while (true) {
 	 		//// Write the body of the while 		
 	 		advance();
 	 		debugDaysCounter++;
@@ -28,10 +28,10 @@ public class Calendar1 {
 	 		//// if statement with the condition (debugDaysCounter == n)
 	 		if (false) { 
 	 			break;
-	 		}
-        }
+	 		} 
+        }*/
 	 	//// Write the necessary ending code here
-	 }
+	 } 
 	
 	 // Advances the date (day, month, year) and the day-of-the-week.
 	 // If the month changes, sets the number of days in this month.
