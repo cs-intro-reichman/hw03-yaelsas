@@ -24,7 +24,7 @@ public class Calendar {
  
         }
         while (year == givenYear) {
-            String date =dayOfMonth + "/" + month + "/" + year;
+            String date = " " +dayOfMonth + "/" + month + "/" + year;
 			if (dayOfMonth == 1 && dayOfWeek == 1) {
 				date += " Sunday";
 			}
