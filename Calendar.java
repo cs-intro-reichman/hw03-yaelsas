@@ -25,12 +25,12 @@ public class Calendar {
         }
         while (year == givenYear) {
             String date = " " +dayOfMonth + "/" + month + "/" + year;
-			if (dayOfMonth == 1 && dayOfWeek == 1) {
+			if ( dayOfWeek == 1) {
 				date += " Sunday";
 			}
 			System.out.println(date);
             advance();
-        }
+		}
 
 	 } 
 	
